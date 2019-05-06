@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Nahid;
+    font-family: Tanha;
     src: url('Tanha.eot');
     src: url('Tanha.eot?#iefix') format('embedded-opentype'),
     url('Tanha.woff') format('woff'),
@@ -8,5 +8,5 @@
 }
 body , a , td , th , tr , p , button , input , textarea
 {
-    font-family: Nahid !important;
+    font-family: Tanha !important;
 }
