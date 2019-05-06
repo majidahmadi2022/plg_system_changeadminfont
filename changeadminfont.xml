@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_SYSTEM_CHANGEADMINFONT</name>
+	<creationDate>2018</creationDate>
+	<author>MAJID AHMADI</author>
+	<authorEmail>npvasta@gmail.com</authorEmail>
+	<authorUrl>https://majidahmadi.ir</authorUrl>
+	<copyright>2018 alright reserverd</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_SYSTEM_CHANGEADMINFONT_DESC</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile></scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_changeadminfont.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_changeadminfont.sys.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.plg_system_changeadminfont.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.plg_system_changeadminfont.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="changeadminfont">changeadminfont.php</filename>
+		<folder>language</folder>
+		<folder>assets</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="note21" type="note" class="alert"
+					   label="PLG_SYSTEM_CHANGEADMINFONT_HELP_LBL"
+					   description="PLG_SYSTEM_CHANGEADMINFONT_HELP_DESC" />
+				<field
+					name="font"
+					type="folderlist"
+					required="true"
+                    directory="plugins/system/changeadminfont/assets/fonts"
+					label="PLG_SYSTEM_CHANGEADMINFONT_SELECTFONT_LBL"
+                    hide_default="true"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

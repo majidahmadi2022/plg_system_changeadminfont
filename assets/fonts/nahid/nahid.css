@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Nahid;
+    src: url('Nahid.eot');
+    src: url('Nahid.eot?#iefix') format('embedded-opentype'),
+    url('Nahid.woff') format('woff'),
+    url('Nahid.ttf') format('truetype');
+    font-weight: normal;
+}
+body , a , td , th , tr , p , button , input , textarea
+{
+    font-family: Nahid !important;
+}

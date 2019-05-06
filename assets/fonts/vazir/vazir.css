@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Nahid;
+    src: url('Vazir.eot');
+    src: url('Vazir.eot?#iefix') format('embedded-opentype'),
+    url('Vazir.woff') format('woff'),
+    url('Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+body , a , td , th , tr , p , button , input , textarea
+{
+    font-family: Nahid !important;
+}
